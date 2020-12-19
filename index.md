@@ -1,5 +1,7 @@
 ---
 title: X Endstop
+badges:
+    - Official
 ---
 
 ## Standard
