@@ -6,13 +6,13 @@ badges:
 
 ## Standard
 
-EVA 1 had a endstop mount that I never really liked. This changes with EVA 2. A standard is now defined that will allow to adapt different, on-carriage endstops with one part. Also, the X posission of the endstop is not possible.
+EVA 1 had a endstop mount that I never really liked. This changes with EVA 2. A standard is now defined that will allow to adapt different, on-carriage endstops with one part. Also, the X position of the endstop is not possible.
 
 By default every `top` part comes with a "blank" endstop plug, which could be used for sensorless homing, this EVA 2 Addon will contain different X endstop options.
 
 <figure>
   <img src="assets/x_endstop.gif" width="640" />
-  <figcaption>Endstop possition adjustments</figcaption>
+  <figcaption>Endstop position adjustments</figcaption>
 </figure>
 
 ## Spec
