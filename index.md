@@ -34,3 +34,15 @@ By default every `top` part comes with a "blank" endstop plug, which could be us
     ![](assets/angled_mgn15.png)
 
 {{ bom("addons/x_endstop/bom/angled_mgn15.csv", 4) }}
+
+=== "Openbuilds MGN12"
+
+    ![](assets/[Endstop] Openbuilds Endstop.png)
+
+{{ bom("addons/x_endstop/bom/openbuilds_mgn12.csv", 4) }}
+
+=== "Openbuilds MGN15"
+
+    ![](assets/[Endstop] Openbuilds Endstop MGN15.png)
+
+{{ bom("addons/x_endstop/bom/openbuilds_mgn15.csv", 4) }}
