@@ -2,47 +2,74 @@
 title: X Endstop
 badges:
     - Official
+uid: EVA / Addons / Endstops
+type: addon
+contributors: 
+    - pkucmus
+repo_url: https://github.com/EVA-3D/addon-endstops
+cad_url: https://cad.onshape.com/documents/d24027dd78e7164add26b5f5/w/0615251dcae8664926ca1aa2/e/e01d9ebd9e9d0542d74812ce
+satisfies:
+    - endstop
 ---
+
+![](assets/__ALL__.png)
 
 ## Standard
 
-EVA 1 had a endstop mount that I never really liked. This changes with EVA 2. A standard is now defined that will allow to adapt different, on-carriage endstops with one part. Also, the X position of the endstop is not possible.
+All EVA carriages have endstop slots in their `top` parts. Those are different depending on the MGN carriage but **consistent** in their spec. This is to make it easy to design different endstop mounts.
 
-By default every `top` part comes with a "blank" endstop plug, which could be used for sensorless homing, this EVA 2 Addon will contain different X endstop options.
+By default 3 types are provided.
 
-<figure>
-  <img src="assets/x_endstop.gif" width="640" />
-  <figcaption>Endstop position adjustments</figcaption>
-</figure>
+=== "Sensorless"
 
-## Spec
+    === "MGN12"
 
-{{ eva_link("endstops") }}
+        <add-bom-button name="{{ meta.uid }} (sensorless_MGN12)">
+            {{ bom_to_json("BOM_Endstops.sensorless.MGN12.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("BOM_Endstops.sensorless.MGN12.csv", 8) }}
 
-{{ onshape_link("endstops") }}
+    === "MGN15"
 
-### Endstops
+        <add-bom-button name="{{ meta.uid }} (sensorless_MGN15)">
+            {{ bom_to_json("BOM_Endstops.sensorless.MGN15.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("BOM_Endstops.sensorless.MGN15.csv", 8) }}
 
-=== "Angled MGN12"
+=== "Angled Endstop"
 
-    ![](assets/angled_mgn12.png)
+    === "MGN12"
 
-{{ bom("addons/x_endstop/bom/angled_mgn12.csv", 4) }}
+        <add-bom-button name="{{ meta.uid }} (angled_MGN12)">
+            {{ bom_to_json("BOM_Endstops.angled.MGN12.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("BOM_Endstops.angled.MGN12.csv", 8) }}
 
-=== "Angled MGN15"
+    === "MGN15"
 
-    ![](assets/angled_mgn15.png)
+        <add-bom-button name="{{ meta.uid }} (angled_MGN15)">
+            {{ bom_to_json("BOM_Endstops.angled.MGN15.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("BOM_Endstops.angled.MGN15.csv", 8) }}
 
-{{ bom("addons/x_endstop/bom/angled_mgn15.csv", 4) }}
+=== "Openbuilds"
 
-=== "Openbuilds MGN12"
+    === "MGN12"
 
-    ![](assets/[Endstop] Openbuilds Endstop.png)
+        <add-bom-button name="{{ meta.uid }} (openbuilds_MGN12)">
+            {{ bom_to_json("BOM_Endstops.openbuilds.MGN12.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("BOM_Endstops.openbuilds.MGN12.csv", 8) }}
 
-{{ bom("addons/x_endstop/bom/openbuilds_mgn12.csv", 4) }}
+    === "MGN15"
 
-=== "Openbuilds MGN15"
-
-    ![](assets/[Endstop] Openbuilds Endstop MGN15.png)
-
-{{ bom("addons/x_endstop/bom/openbuilds_mgn15.csv", 4) }}
+        <add-bom-button name="{{ meta.uid }} (openbuilds_MGN15)">
+            {{ bom_to_json("BOM_Endstops.openbuilds.MGN15.csv") }}
+        </add-bom-button>
+        
+        {{ bom_to_md_table("BOM_Endstops.openbuilds.MGN15.csv", 8) }}
