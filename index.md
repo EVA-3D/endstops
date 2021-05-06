@@ -73,3 +73,9 @@ By default 3 types are provided.
         </add-bom-button>
         
         {{ bom_to_md_table("BOM_Endstops.openbuilds.MGN15.csv", 8) }}
+
+
+## Links
+
+{{ download_button }}
+{{ cad_link }}
